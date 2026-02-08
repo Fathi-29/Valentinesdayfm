@@ -51,9 +51,9 @@ document.addEventListener("DOMContentLoaded", function () {
   
   const blackmail = [
     "Please",
-    "I'm begging you",
-    "I'm crying",
-    "I'm sad",
+    "Fine say no",
+    "I'm crying is it yes now?",
+    "I'm sad but i know its still going to be no",
     "HUHUHUHU",
     "Please Say Yes",
     "I'm gonna cry",
@@ -69,6 +69,10 @@ document.addEventListener("DOMContentLoaded", function () {
   let counter = 0;
   
   function no() {
+      if (counter >= 4) {
+    alert("Okay okay, I’ll stop 😌");
+    return;
+  }
     counter++;
     let sadMusic = document.getElementById("sadMusic");
     let happyMusic = document.getElementById("happyMusic");
@@ -102,13 +106,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const wedate = document.getElementById("wedate");
         const btns = document.getElementById("btns");
         btns.style.display = "none";
-        wedate.innerText = "We are each other's valentine now. I love you cutie. ❤️😘";
+        wedate.innerText = "Thank you for accepting my proposal. I love you my husband. ❤️😘";
 
         // Open index1.html in a new tab
         window.open("index1.html", "_blank");
 
     } else {
-        alert("Don't say yes right away, cutie. Play around a bit 😉😘");
+        alert("Don't say yes soon. Play around a little bit with no 😉😘");
     }
 }
 
